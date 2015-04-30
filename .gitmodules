@@ -1,0 +1,3 @@
+[submodule "resource/style-modules"]
+	path = resource/style-modules
+	url = https://github.com/Juris-M/style-modules.git
