@@ -13,7 +13,7 @@
                                 <em:minVersion>2.1</em:minVersion>
                                 <em:maxVersion>4.0.*</em:maxVersion>
                                 <em:updateLink>https://github.com/Juris-M/myles/releases/download/v1.1.1/myles-v1.1.1.xpi</em:updateLink>
-                                <em:updateHash>sha1:a29f2aa714f2be69535956ed209173d3ad051999</em:updateHash>
+                                <em:updateHash>sha1:3249d16cf39c3f37bfd1447e448edb8e5ea87bd3</em:updateHash>
                             </rdf:Description>
                         </em:targetApplication>
                         <em:targetApplication>
@@ -22,7 +22,7 @@
                                 <em:minVersion>3.6</em:minVersion>
                                 <em:maxVersion>38.*</em:maxVersion>
                                 <em:updateLink>https://github.com/Juris-M/myles/releases/download/v1.1.1/myles-v1.1.1.xpi</em:updateLink>
-                                <em:updateHash>sha1:a29f2aa714f2be69535956ed209173d3ad051999</em:updateHash>
+                                <em:updateHash>sha1:3249d16cf39c3f37bfd1447e448edb8e5ea87bd3</em:updateHash>
                             </rdf:Description>
                         </em:targetApplication>
                     </rdf:Description>
@@ -30,12 +30,12 @@
             </rdf:Seq>
         </em:updates>
         <em:signature>
-            MIIBEjALBgkqhkiG9w0BAQ0DggEBAIxFxFBpiMYzsriJZfbYCsM7kGlOb1eStgPk
-            ilWm5tMyal1kHzabcoUN6BYBLC/+yxK5TIu78p/f7zKF8qT74GB3UkYMAFggISD7
-            L1HTDd8cKsajPWPgWFkRWOSu0WlllXtIjUY35+KS0ooYlqFNqu8i2enypeNavstW
-            EZOS7iXOxAtgidn7DD+TqY4tSs+JucBtCO0xU0ymDlBSvKgfv/P7qVHTiexpFxuQ
-            RZXyAn10ORTWoMTTBCfyDnxhSo2vCmZLjKi5LHK8LeFgu/BZw1V30U3Wbqqj6CvU
-            XQA1lMYCNl8PGQn1XhNC155LYJvoHZr52jwFEFmZFhR1pEiQFJg=
+            MIIBEjALBgkqhkiG9w0BAQ0DggEBAIRgqQ5MnZmx/qbADEzEmL0Igpe8rvz9NUl1
+            AW9XY2FvpRj5J6XdWBMKBREB0p3zN3vTKIRKor09vJeqrw/ngK9T4m+oJ6pkUmOH
+            SVMrQAmZl/wxSZ4vuexsguR+RCOZcdU+CaJc1Rjok4066uMwvNbDpVCSR0ZlAsVF
+            Sl53JzRgcHnEPWd5jzV+uJvKpWzfKjMTTMvO78CW4NV/9yv+fBN/OEITeldPyL7+
+            VfQFU602bpSQQ7kZUnEnqv2ExqayDR9AwujagkfAaSVLGi46Uswb6XrnOhk+qIqk
+            nq4ZeMhSVu3LNfrQr5naoLvrk8GIVcFJdt5jdW0jXtwtxDZgeog=
         </em:signature>
     </rdf:Description>
 </rdf:RDF>
