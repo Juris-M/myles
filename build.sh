@@ -6,9 +6,11 @@ set -e
 
 # Constants
 PRODUCT="Myles: modular styles for the Juris-M reference manager"
-
-PATH="${PATH}:$(dirname $0)/bin-lib"
-
+IS_BETA=0
+FORK="myles"
+BRANCH="master"
+CLIENT="myles"
+VERSION_ROOT="1.1."
 
 # Error handlers
 . sh-lib/errors.sh
@@ -19,7 +21,10 @@ PATH="${PATH}:$(dirname $0)/bin-lib"
 # Version levels
 . sh-lib/versions.sh
 
-# Parse options
+# Prompt for options
+#. sh-lib/prompt.sh
+
+# Parse command-line options
 . sh-lib/opts.sh
 
 # Functions for build
@@ -34,23 +39,28 @@ PATH="${PATH}:$(dirname $0)/bin-lib"
 # Perform release ops
 case $RELEASE in
     1)
+        echo "(1)"
         # Preliminaries
         increment-patch-level
         if [ "$BETA" -gt 0 ]; then
             increment-beta-level
         fi
-        VERSION="${VERSION}alpha"
         echo "Version: ${VERSION}"
 
         # Build
+        echo "(a)"
         touch-log
+        echo "(b)"
         refresh-style-modules
+        echo "(c)"
         build-the-plugin
+        echo "(d)"
         repo-finish 1 "Built as ALPHA (no upload to GitHub)"
+        echo "(e)"
         ;;
     2)
+        echo "(2)"
         # Claxon
-        create-release-dir
         check-for-uncommitted
         # Preliminaries
         increment-patch-level
@@ -67,8 +77,8 @@ case $RELEASE in
         repo-finish 0 "Released as BETA (uploaded to GitHub, prerelease)"
         ;;
     3)
+        echo "(3)"
         # Claxon
-        create-release-dir
         check-for-uncommitted
         block-uncommitted
         # Preliminaries
