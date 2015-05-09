@@ -22,8 +22,14 @@ function ifZotero(succeed, fail) {
 
 function getRetriever (Zotero) {
     return function (jurisdiction, preference) {
+        jurisdiction = jurisdiction.replace(/\:/g, "+");
 	    var id = preference ? "juris-" + jurisdiction + "-" + preference : "juris-" + jurisdiction;
-	    var ret = Zotero.File.getContentsFromURL("chrome://myles-styles/content/" + id + ".csl");
+        var ret;
+        try {
+	        ret = Zotero.File.getContentsFromURL("chrome://myles-styles/content/" + id + ".csl");
+        } catch (e) {
+            ret = false;
+        }
         return ret;
     }
 }
