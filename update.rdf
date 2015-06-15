@@ -6,14 +6,14 @@
             <rdf:Seq>
                 <rdf:li>
                     <rdf:Description>
-                        <em:version>1.1.24</em:version>
+                        <em:version>1.1.25</em:version>
                         <em:targetApplication>
                             <rdf:Description>
                                 <em:id>zotero@chnm.gmu.edu</em:id>
                                 <em:minVersion>2.1</em:minVersion>
                                 <em:maxVersion>4.0.*</em:maxVersion>
-                                <em:updateLink>https://github.com/Juris-M/myles/releases/download/v1.1.24/myles-v1.1.24.xpi</em:updateLink>
-                                <em:updateHash>sha1:8167fb9a1640c476b8cbd87de86014e61876aee9</em:updateHash>
+                                <em:updateLink>https://github.com/Juris-M/myles/releases/download/v1.1.25/myles-v1.1.25.xpi</em:updateLink>
+                                <em:updateHash>sha1:ef991ff7fca7ea7710cc41f7288ef3678b1c4811</em:updateHash>
                             </rdf:Description>
                         </em:targetApplication>
                         <em:targetApplication>
@@ -21,8 +21,8 @@
                                 <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
                                 <em:minVersion>3.6</em:minVersion>
                                 <em:maxVersion>38.*</em:maxVersion>
-                                <em:updateLink>https://github.com/Juris-M/myles/releases/download/v1.1.24/myles-v1.1.24.xpi</em:updateLink>
-                                <em:updateHash>sha1:8167fb9a1640c476b8cbd87de86014e61876aee9</em:updateHash>
+                                <em:updateLink>https://github.com/Juris-M/myles/releases/download/v1.1.25/myles-v1.1.25.xpi</em:updateLink>
+                                <em:updateHash>sha1:ef991ff7fca7ea7710cc41f7288ef3678b1c4811</em:updateHash>
                             </rdf:Description>
                         </em:targetApplication>
                     </rdf:Description>
@@ -30,12 +30,12 @@
             </rdf:Seq>
         </em:updates>
         <em:signature>
-            MIIBEjALBgkqhkiG9w0BAQ0DggEBACP0V83MnPbj0OjXRajyjGciC82pbtwaEqa8
-            PPRf2FJ4cTSCdYYj3g7u/HbMYnlO9eYaOWX8psaGVhKqXMCCnEegcNqtwqWC31Ki
-            fV8XMwZo/PQcpu+Bzk1wMGcx6o9+mDiZIeQ9vAhh/p0qy0lVks7U/xlHsirLHKqI
-            j8mCaui6KpCxqfgqFI5I0NYaX+v8So9ghg8sx9C75dxu9G3z6zKAYJf9qtQtMbAP
-            ugWLWn4W/8/f0Y51+a4g4aJEQaNk3idrtAwSLZcf+nA85py9YrFxz/GHn1A2A58O
-            +4BcqzB5E+1cZdyXRbHOdM5WCEW0AJgUDtHVvn8AdUokudQ5vEI=
+            MIIBEjALBgkqhkiG9w0BAQ0DggEBADH9JQOLwPuYe1tfe1sJctDAj8FOXJc47Tn8
+            eoGHzkUFfwoJxPCRzx5EiDmqDLQX/2KONP6RCQ5EcUsqf4bmOpadm/ITPX4NAmX4
+            deCy4m5aC5KBNNkZgG6pZwaPy6CiVuypg/p6ke6tVEjzBwCBA+h49BFpYbZd4VC3
+            XOw/Ghna7nlK76NJhYdaKqQnufieyr7tePJw0keCyaHmFydP0jsSEVNuyF9FkE5n
+            fl9A3DvFANFD8vm+n4Zuc1wToGk/AboeEojhyLWZJ5ZyMTO3pBr7ys1uUlpfUv2C
+            pi4pQYIqox1F9o682f5M2lFvDjfpzOoJORdiRuo8v5rn39vt9Hg=
         </em:signature>
     </rdf:Description>
 </rdf:RDF>
