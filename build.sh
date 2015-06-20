@@ -76,8 +76,11 @@ case $RELEASE in
         build-the-plugin
         echo D
         git-checkin-all-and-push
+        echo E
         create-github-release
+        echo F
         add-xpi-to-github-release
+        echo G
         repo-finish 0 "Released as BETA (uploaded to GitHub, prerelease)"
         ;;
     3)
