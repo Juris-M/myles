@@ -68,9 +68,13 @@ case $RELEASE in
         save-beta-level
         echo "Version is: $VERSION"
         # Build
+        echo A
         touch-log
+        echo B
         refresh-style-modules
+        echo C
         build-the-plugin
+        echo D
         git-checkin-all-and-push
         create-github-release
         add-xpi-to-github-release
