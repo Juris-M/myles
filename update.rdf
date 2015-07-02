@@ -1,32 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-        xmlns:em="http://www.mozilla.org/2004/em-rdf#">
-    <rdf:Description rdf:about="urn:mozilla:extension:myles@juris-m.github.io">
-        <em:updates>
-            <rdf:Seq>
-                <rdf:li>
-                    <rdf:Description>
-                        <em:version>1.1.45</em:version>
-                        <em:targetApplication>
-                            <rdf:Description>
-                                <em:id>zotero@chnm.gmu.edu</em:id>
-                                <em:minVersion>2.1</em:minVersion>
-                                <em:maxVersion>4.0.*</em:maxVersion>
-                                <em:updateLink>https:/v1.1.45/myles-v1.1.45.xpi</em:updateLink>
-                                <em:updateHash>sha1:5644481339b0154dcb65506c5d889863c108cc09</em:updateHash>
-                            </rdf:Description>
-                        </em:targetApplication>
-                        <em:targetApplication>
-                            <rdf:Description>
-                                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-                                <em:minVersion>3.6</em:minVersion>
-                                <em:maxVersion>38.*</em:maxVersion>
-                                <em:updateLink>https:/v1.1.45/myles-v1.1.45.xpi</em:updateLink>
-                            </rdf:Description>
-                        </em:targetApplication>
-                    </rdf:Description>
-                </rdf:li>
-            </rdf:Seq>
-        </em:updates>
-    </rdf:Description>
-</rdf:RDF>
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="rdf:#$JLLo43"
+                   em:version="1.1.46">
+    <em:targetApplication RDF:resource="rdf:#$MLLo43"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$MLLo43"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="3.6"
+                   em:maxVersion="39.*"
+                   em:updateLink="https://github.com/Juris-M/myles/releases/download/v1.1.46/myles-v1.1.46.xpi" />
+  <RDF:Seq RDF:about="rdf:#$ILLo43">
+    <RDF:li RDF:resource="rdf:#$JLLo43"/>
+  </RDF:Seq>
+  <RDF:Description RDF:about="urn:mozilla:extension:myles@juris-m.github.io"
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAFEm2giKKs7hwV+ocdFzT6YUBFYf5QWfUzGbY7JA5uYPBtxUfiNePsUmpHcvPN3fNLpVIvU5kgvMCZuhqbNnMoxwyCiwpGEJ+7M7+crBp1le9BRu6VHDfwL+qoF/GFZRQ3TMZiUMawcZ6oa5bYrGGgNRYn78IqyyYpWzeNeGfMZS">
+    <em:updates RDF:resource="rdf:#$ILLo43"/>
+  </RDF:Description>
+</RDF:RDF>
