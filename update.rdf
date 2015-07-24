@@ -2,20 +2,20 @@
 <RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
          xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <RDF:Description RDF:about="rdf:#$JLLo43"
-                   em:version="1.1.46">
-    <em:targetApplication RDF:resource="rdf:#$MLLo43"/>
-  </RDF:Description>
-  <RDF:Description RDF:about="rdf:#$MLLo43"
+  <RDF:Description RDF:about="rdf:#$qoJeh3"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="3.6"
                    em:maxVersion="39.*"
-                   em:updateLink="https://github.com/Juris-M/myles/releases/download/v1.1.46/myles-v1.1.46.xpi" />
-  <RDF:Seq RDF:about="rdf:#$ILLo43">
-    <RDF:li RDF:resource="rdf:#$JLLo43"/>
+                   em:updateLink="https://github.com/Juris-M/myles/releases/download/v1.1.47/myles-v1.1.47.xpi" />
+  <RDF:Description RDF:about="rdf:#$noJeh3"
+                   em:version="1.1.47">
+    <em:targetApplication RDF:resource="rdf:#$qoJeh3"/>
+  </RDF:Description>
+  <RDF:Seq RDF:about="rdf:#$moJeh3">
+    <RDF:li RDF:resource="rdf:#$noJeh3"/>
   </RDF:Seq>
   <RDF:Description RDF:about="urn:mozilla:extension:myles@juris-m.github.io"
-                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAFEm2giKKs7hwV+ocdFzT6YUBFYf5QWfUzGbY7JA5uYPBtxUfiNePsUmpHcvPN3fNLpVIvU5kgvMCZuhqbNnMoxwyCiwpGEJ+7M7+crBp1le9BRu6VHDfwL+qoF/GFZRQ3TMZiUMawcZ6oa5bYrGGgNRYn78IqyyYpWzeNeGfMZS">
-    <em:updates RDF:resource="rdf:#$ILLo43"/>
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAGkWumqtzxmUboC3LN8kHUEqICD2n6Ulv+8PhAFxriGKI1jfi/Gx9fOTof1peHRgoyvaeGrEpi5A5IuYz4faJUAuhMcfpOgPOdtNP0olMup/Mwpy4obui/eYqm4A3L3MaEgSUGO8DpoESMy+CkzgECmrDp6Wpl0167RaNijEOc+v">
+    <em:updates RDF:resource="rdf:#$moJeh3"/>
   </RDF:Description>
 </RDF:RDF>
