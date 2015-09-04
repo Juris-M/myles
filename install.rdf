@@ -9,6 +9,7 @@
     <em:creator>Frank Bennett</em:creator>
     <em:description>Modular styles and run-time loader for the Juris-M reference manager.</em:description>
     <em:updateURL>https://juris-m.github.io/myles/update.rdf</em:updateURL>
+    <em:iconURL>chrome://myles/skin/mlz_z_32px.png</em:iconURL>
     <em:unpack>true</em:unpack>
     <em:bootstrap>true</em:bootstrap>
     <em:updateKey>
