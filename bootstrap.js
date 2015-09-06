@@ -9,13 +9,10 @@ var Zotero;
  */
 
 function ifZotero(succeed, fail) {
-    var ZoteroClass = Cc["@zotero.org/Zotero;1"];
-    if (ZoteroClass && ZoteroClass.getService) {
-        Zotero = ZoteroClass
-	        .getService(Ci.nsISupports)
-	        .wrappedJSObject;
+    try {
+        var Zotero = Cc["@zotero.org/Zotero;1"].getService(Ci.nsISupports).wrappedJSObject;
         succeed ? succeed(Zotero) : null;
-    } else {
+    } catch (e) {
         fail ? fail() : null;
     }
 }
