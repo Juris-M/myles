@@ -10,7 +10,7 @@ var Zotero;
 
 function ifZotero(succeed, fail) {
     var ZoteroClass = Cc["@zotero.org/Zotero;1"];
-    if (ZoteroClass) {
+    if (ZoteroClass && ZoteroClass.getService) {
         Zotero = ZoteroClass
 	        .getService(Ci.nsISupports)
 	        .wrappedJSObject;
