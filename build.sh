@@ -6,7 +6,7 @@ set -e
 
 # Constants
 PRODUCT="Myles: modular styles for the Juris-M reference manager"
-IS_BETA=0
+IS_BETA="false"
 FORK="myles"
 BRANCH="master"
 CLIENT="myles"

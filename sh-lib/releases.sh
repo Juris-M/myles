@@ -14,7 +14,7 @@ function create-github-release () {
         | ~/bin/jq '.upload_url')
     if [ "$UPLOAD_URL" == "" ]; then
         # Create the release
-        DAT=$(printf '{"tag_name": "%s", "name": "%s", "body":"%s", "draft": false, "prerelease": %d}' "$RELEASE_TAG" "$RELEASE_NAME" "$RELEASE_BODY" "$IS_BETA")
+        DAT=$(printf '{"tag_name": "%s", "name": "%s", "body":"%s", "draft": false, "prerelease": %s}' "$RELEASE_TAG" "$RELEASE_NAME" "$RELEASE_BODY" "$IS_BETA")
         UPLOAD_URL=$(curl --fail --silent \
             --user "${DOORKEY}" \
             --data "${DAT}" \
@@ -41,7 +41,7 @@ function publish-update () {
     cp update-TEMPLATE.rdf update-TRANSFER.rdf
     sed -si "s/\(<em:version>\).*\(<\/em:version>\)/\\1${VERSION_STUB}\\2/" update-TRANSFER.rdf
     sed -si "s/\(<em:updateLink>.*download\/\).*\(<\/em:updateLink>\)/\\1v${VERSION_STUB}\/${CLIENT}-v${VERSION_STUB}.xpi\\2/" update-TRANSFER.rdf
-    ~/src/mccoy/mccoy
+    #~/src/mccoy/mccoy
     echo -n "Proceed? (y/n): "
     read CHOICE
     if [ "${CHOICE}" == "y" ]; then
