@@ -5,13 +5,13 @@ set -e
 # Release-dance code goes here.
 
 # Constants
-PRODUCT="Myles: modular styles for the Juris-M reference manager"
+PRODUCT="Myles: modular CSL-M styles for law"
 IS_BETA="false"
 FORK="myles"
 BRANCH="master"
 CLIENT="myles"
 VERSION_ROOT="1.1."
-SIGNED_STUB="myles__modular_csl_m_styles_for_law-"
+SIGNED_STUB="modular_styles_for_juris_m-"
 
 function build-the-plugin () {
     set-install-version
