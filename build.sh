@@ -11,6 +11,7 @@ FORK="myles"
 BRANCH="master"
 CLIENT="myles"
 VERSION_ROOT="1.1."
+SIGNED_STUB="myles__modular_csl_m_styles_for_law-"
 
 function build-the-plugin () {
     set-install-version
@@ -26,6 +27,7 @@ function build-the-plugin () {
         -name '*.bak' -prune -o \
         -name '*.tmpl' -prune -o \
         -name 'version' -prune -o \
+        -name 'jm-sh' -prune -o \
         -name 'releases' -prune -o \
         -name 'bin-lib' -prune -o \
         -name 'sh-lib' -prune -o \
