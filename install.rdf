@@ -4,7 +4,7 @@
     <em:id>myles@juris-m.github.io</em:id>
     <em:type>2</em:type>
     <em:name>Myles: modular CSL-M styles for law</em:name>
-    <em:version>1.1.98</em:version>
+    <em:version>1.1.99</em:version>
     <em:creator>Frank Bennett</em:creator>
     <em:description>Modular styles and run-time loader for the Juris-M reference manager.</em:description>
     <em:updateURL>https://juris-m.github.io/myles/update.rdf</em:updateURL>
