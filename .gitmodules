@@ -1,6 +1,7 @@
 [submodule "resource/style-modules"]
 	path = resource/style-modules
 	url = https://github.com/Juris-M/style-modules.git
+	branch = release
 [submodule "jm-sh"]
 	path = jm-sh
 	url = https://github.com/Juris-M/jm-sh.git
