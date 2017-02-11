@@ -8,7 +8,7 @@ set -e
 PRODUCT="Myles: modular CSL-M styles for law"
 IS_BETA="false"
 FORK="myles"
-BRANCH="master"
+BRANCH="myles-5.0"
 CLIENT="myles"
 VERSION_ROOT="1.1."
 SIGNED_STUB="modular_styles_for_juris_m-"
