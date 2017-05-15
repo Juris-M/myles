@@ -10,7 +10,7 @@ IS_BETA="false"
 FORK="myles"
 BRANCH="myles-5.0"
 CLIENT="myles"
-VERSION_ROOT="1.1."
+VERSION_ROOT="2.1."
 SIGNED_STUB="modular_styles_for_juris_m-"
 
 function build-the-plugin () {

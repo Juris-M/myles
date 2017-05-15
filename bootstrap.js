@@ -8,15 +8,6 @@ var Zotero;
  * additional I/O will not impact the UI. Whew.
  */
 
-function ifZotero(succeed, fail) {
-    try {
-        var Zotero = Cc["@zotero.org/Zotero;1"].getService(Ci.nsISupports).wrappedJSObject;
-        succeed ? succeed(Zotero) : null;
-    } catch (e) {
-        fail ? fail() : null;
-    }
-}
-
 function getRetriever (Zotero) {
     return function (jurisdiction, preference) {
         jurisdiction = jurisdiction.replace(/\:/g, "+");
@@ -31,18 +22,13 @@ function getRetriever (Zotero) {
     }
 }
 
-function UiObserver() {
-    this.register();
-}
-
-UiObserver.prototype = {
+var startupObserver = {
     observe: function(subject, topic, data) {
-        ifZotero(
-            function (Zotero) {
-                Zotero.CiteProc.CSL.retrieveStyleModule = getRetriever(Zotero);
-            },
-            null
-        );
+        Zotero = Cc["@zotero.org/Zotero;1"]
+	        .getService(Ci.nsISupports)
+	        .wrappedJSObject;
+        oldRetriever = Zotero.CiteProc.CSL.retrieveStyleModule;
+        Zotero.CiteProc.CSL.retrieveStyleModule = getRetriever(Zotero);
     },
     register: function() {
         var observerService = Components.classes["@mozilla.org/observer-service;1"]
@@ -55,34 +41,18 @@ UiObserver.prototype = {
         observerService.removeObserver(this, "final-ui-startup");
     }
 }
-var uiObserver = new UiObserver();
-
 
 /*
  * Bootstrap functions
  */
 
 function startup (data, reason) {
-    ifZotero(
-        function (Zotero) {
-            // Set immediately if we have Zotero
-            Zotero.CiteProc.CSL.retrieveStyleModule = getRetriever(Zotero);
-        },
-        function () {
-            // If not, assume it will arrive by the end of UI startup
-            uiObserver.register();
-        }
-    );
+    startupObserver.register();
 }
 
 function shutdown (data, reason) {
-    uiObserver.unregister();
-    ifZotero(
-        function (Zotero) {
-            Zotero.CiteProc.CSL.retrieveStyleModule = oldRetriever;
-        },
-        null
-    );
+    startupObserver.unregister();
+    Zotero.CiteProc.CSL.retrieveStyleModule = oldRetriever;
 }
 
 function install (data, reason) {}
