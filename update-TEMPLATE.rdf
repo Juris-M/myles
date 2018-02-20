@@ -11,7 +11,7 @@
                 <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
                 <em:minVersion>38.0</em:minVersion>
                 <em:maxVersion>54.*</em:maxVersion>
-                <em:updateLink>https://github.com/Juris-M/myles/releases/download/v1.1.108/myles-v1.1.108-fx.xpi</em:updateLink>
+                <em:updateLink>https://our.law.nagoya-u.ac.jp/download/myles/update/myles-v1.1.108-fx.xpi</em:updateLink>
               </rdf:Description>
             </em:targetApplication>
           </rdf:Description>
