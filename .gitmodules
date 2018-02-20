@@ -5,3 +5,5 @@
 [submodule "jm-sh"]
 	path = jm-sh
 	url = https://github.com/Juris-M/jm-sh.git
+	branch = our-law
+	
